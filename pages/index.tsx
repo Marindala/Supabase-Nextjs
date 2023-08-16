@@ -32,7 +32,10 @@ export default function Gallery({ images }: { images: Image[] }) {
   return (
     <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-     <h1>Ver imagenes</h1>
+      <a   href="https://scontent.feze11-1.fna.fbcdn.net/v/t39.30808-6/339136257_917559112721773_1741361305998165288_n.jpg?stp=dst-jpg_p600x600&_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHI4Rirrp6I3Uz_q3NMGtY3IKSXKwIJ7xogpJcrAgnvGrRXz7l-blGD0pKxH4M0Y77wQ0BSgQ6-zVGkLiQlaKR-&_nc_ohc=8yWyDbHswBQAX9CHWVW&_nc_ht=scontent.feze11-1.fna&oh=00_AfCv-uBHVeeWqgWFaRXs0q-CT8ijCmnU4e_qPJe-Aul-rQ&oe=64E11CAB"><span>Imagen de Inst</span>
+
+ 
+</a>
       </div>
     </div>
   )
