@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { createClient } from '@supabase/supabase-js'
 
-/* export async function getStaticProps() {
+ export async function getStaticProps() {
   const supabaseAdmin = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL || '',
     process.env.SUPABASE_SERVICE_ROLE_KEY || ''
@@ -14,7 +14,7 @@ import { createClient } from '@supabase/supabase-js'
       images: data,
     },
   }
-} */
+} 
 
 function cn(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -52,13 +52,13 @@ function BlurImage() {
           alt=""
           src="https://scontent.feze11-1.fna.fbcdn.net/v/t39.30808-6/339136257_917559112721773_1741361305998165288_n.jpg?stp=dst-jpg_p600x600&_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHI4Rirrp6I3Uz_q3NMGtY3IKSXKwIJ7xogpJcrAgnvGrRXz7l-blGD0pKxH4M0Y77wQ0BSgQ6-zVGkLiQlaKR-&_nc_ohc=8yWyDbHswBQAX9CHWVW&_nc_ht=scontent.feze11-1.fna&oh=00_AfCv-uBHVeeWqgWFaRXs0q-CT8ijCmnU4e_qPJe-Aul-rQ&oe=64E11CAB"
           style={{ objectFit: 'cover',
-          width: '50%',
-          height: '50%',
-          
-        
+          width: '100%',
+          height: '100%',
           transition: 'transform 0.7s ease-in-out',
           transform: isLoading ? 'scale(1.1) blur(2px) grayscale(1)' : 'scale(1) blur(0) grayscale(0)',
         }}
+          
+        
         onLoad={() => setLoading(false)}
         /> 
       </div>
