@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* *{
+    background-color:pink;
+} */
+
+
+/* <div className="absolute inset-0 z-10 bg-opacity-80 bg-gray-900  bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("https://scontent.feze11-1.fna.fbcdn.net/v/t39.30808-6/327461869_839100874006820_2879974458254628759_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeFeuq6pNm103iXyHQlrUvEhgR4nCqdpB0aBHicKp2kHRj4ZXFjgVQjd4dMN11PG20hqkCLbmc5s1gzSv8OweZX3&_nc_ohc=39-yfvDQJZoAX80x_xh&_nc_ht=scontent.feze11-1.fna&oh=00_AfAaq3_bxy7qFeyGVU5lJnOYTX2023YRvQL9XLVa-7OmRA&oe=64E2DCE5")' }}></div> */
