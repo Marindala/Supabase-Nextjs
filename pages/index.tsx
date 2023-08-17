@@ -33,19 +33,19 @@ type Image = {
 export default function Gallery({ images }: { images: Image[] }) {
   return (
     <div>
-      <div className="mb-4  p-4 text-center sm:flex sm:items-center sm:justify-center sm:text-center">
+      <div className="-mb-6 p-4 text-center sm:flex sm:items-center sm:justify-center sm:text-center">
         {' '}
         {/* -mt-4 */}
         <img
-          className="navbar-img screen-reader-text duration-1500 mb-2 cursor-pointer rounded-full transition  hover:opacity-75 sm:mb-4 sm:mt-4"
+          className="mb-8 navbar-img screen-reader-text duration-1500 cursor-pointer rounded-full transition  hover:opacity-75 sm:mb-4 sm:mt-4"
           src="https://scontent.fepa10-2.fna.fbcdn.net/v/t39.30808-6/326744154_1320260588541155_4589715700627039442_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEDATq-WpVI0G3p84v9iUqL_kuTf7IB3QD-S5N_sgHdAKjf3gQ9vn06MKCwG7bePegycFHY6KPYmre_OLXqLKjS&_nc_ohc=9lJ3SVNOUpIAX8hQG5t&_nc_oc=AQlqtXco7cebtdJzM7szvwodvO0ZQbU6ajsHn9bM-r5i8B4JxyCJo3h5g6qF7iqGge4&_nc_ht=scontent.fepa10-2.fna&oh=00_AfBt9jaY_JQEJiSnWwCp74LoUMYuvc_0qNSQN-Sit6tL7w&oe=64E1DCBC"
           alt="Logo"
           style={{ width: '90px', height: '90px' }}
         />
       </div>
 
-      <div className="mx-auto max-w-2xl  px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h1 className="mb-4 text-center text-5xl  font-bold text-gray-500 xl:text-7xl xl:leading-[7.5rem]">
+      <div className="mx-auto max-w-2xl  px-4 py-6 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h1 className="mb-8 text-center text-5xl  font-bold text-gray-500 xl:text-7xl xl:leading-[7.5rem]">
           Galeria de Arte{' '}
         </h1>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
@@ -81,7 +81,7 @@ function BlurImage({ image }: { image: Image }) {
           onLoad={() => setLoading(true)}
         />
       </div>
-      <h3 className="mt-4 text-sm text-gray-700">{image.name}</h3>
+      <h3 className="mt-4 text-sm text-gray-700 font-bold">{image.name}</h3>
       <p className="mt-1 text-lg font-medium text-gray-900">{image.username}</p>
     </a>
   )
