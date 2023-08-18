@@ -33,14 +33,14 @@ type Image = {
 export default function Gallery({ images }: { images: Image[] }) {
   return (
     <div>
-      <div className="-mb-6 p-4 text-center sm:flex sm:items-center sm:justify-center sm:text-center">
+      <div className="-mb-6 p-4 items-center text-center sm:flex sm:items-center justify-center md:items-center  sm:text-center">
         {' '}
         {/* -mt-4 */}
         <img
-          className="mb-8 navbar-img screen-reader-text duration-1500 cursor-pointer rounded-full transition  hover:opacity-75 sm:mb-4 sm:mt-4"
+          className="mb-8 screen-reader-text duration-1500 cursor-pointer rounded-full transition  hover:opacity-75 sm:mb-4 sm:mt-4"
           src="https://scontent.fepa10-2.fna.fbcdn.net/v/t39.30808-6/326744154_1320260588541155_4589715700627039442_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEDATq-WpVI0G3p84v9iUqL_kuTf7IB3QD-S5N_sgHdAKjf3gQ9vn06MKCwG7bePegycFHY6KPYmre_OLXqLKjS&_nc_ohc=9lJ3SVNOUpIAX8hQG5t&_nc_oc=AQlqtXco7cebtdJzM7szvwodvO0ZQbU6ajsHn9bM-r5i8B4JxyCJo3h5g6qF7iqGge4&_nc_ht=scontent.fepa10-2.fna&oh=00_AfBt9jaY_JQEJiSnWwCp74LoUMYuvc_0qNSQN-Sit6tL7w&oe=64E1DCBC"
           alt="Logo"
-          style={{ width: '90px', height: '90px' }}
+          style={{ width: '70px', height: '70px' }}
         />
       </div>
 
