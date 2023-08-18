@@ -40,6 +40,7 @@ export default function Gallery({ images }: { images: Image[] }) {
           className="mb-8 screen-reader-text duration-1500 cursor-pointer rounded-full transition  hover:opacity-75 sm:mb-4 sm:mt-4"
           src="https://scontent.fepa10-2.fna.fbcdn.net/v/t39.30808-6/326744154_1320260588541155_4589715700627039442_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEDATq-WpVI0G3p84v9iUqL_kuTf7IB3QD-S5N_sgHdAKjf3gQ9vn06MKCwG7bePegycFHY6KPYmre_OLXqLKjS&_nc_ohc=9lJ3SVNOUpIAX8hQG5t&_nc_oc=AQlqtXco7cebtdJzM7szvwodvO0ZQbU6ajsHn9bM-r5i8B4JxyCJo3h5g6qF7iqGge4&_nc_ht=scontent.fepa10-2.fna&oh=00_AfBt9jaY_JQEJiSnWwCp74LoUMYuvc_0qNSQN-Sit6tL7w&oe=64E1DCBC"
           alt="Logo"
+          
           style={{ width: '70px', height: '70px' }}
         />
       </div>
@@ -62,7 +63,8 @@ function BlurImage({ image }: { image: Image }) {
   const [isLoading, setLoading] = useState(false)
 
   return (
-    <a href={image.href} className="group">
+    <a href={image.href} target="_blank"
+    rel="noopener noreferrer" className="group">
       <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
         <img
           alt=""
