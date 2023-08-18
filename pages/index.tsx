@@ -9,7 +9,7 @@ export async function getStaticProps() {
   )
 
   const { data } = await supabaseAdmin.from('images').select('*').order('id')
-  console.log(data)
+  //console.log(data)
   return {
     props: {
       images: data,
@@ -78,7 +78,7 @@ function BlurImage({ image }: { image: Image }) {
               ? 'scale-110 blur-2xl grayscale'
               : 'scale-100 blur-0 grayscale-0'
           )}
-          onLoad={() => setLoading(true)}
+          onLoad={() => setLoading(false)}
         />
       </div>
       <h3 className="mt-4 text-sm text-gray-700 font-bold">{image.name}</h3>
