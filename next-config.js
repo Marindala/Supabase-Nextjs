@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['scontent.feze11-1.fna.fbcdn.net', 'facebook.com'],
+    domains: ['scontent.feze11-1.fna.fbcdn.net', 'facebook.com', 'scontent.fepa10-1.fna.fbcdn.net'],
   },
 };
