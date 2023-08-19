@@ -33,7 +33,7 @@ type Image = {
 export default function Gallery({ images }: { images: Image[] }) {
   return (
     <div>
-      <div className="-mb-6 p-4 items-center text-center sm:flex sm:items-center justify-center md:items-center  sm:text-center">
+      <div className="p-4 items-center text-center sm:flex sm:items-center justify-center md:items-center  sm:text-center">
         {' '}
         {/* -mt-4 */}
         <img
