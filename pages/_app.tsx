@@ -6,8 +6,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
       <Head>
-        <title>Art Gallery</title>
-        <meta name="description" content="Art Gallery" />
+        <title>Galeria de Arte</title>
+        <meta name="description" content="Galeria de Arte" />
         <link rel="icon" href="/logopng.png" />
       </Head>
       <Component {...pageProps} />
