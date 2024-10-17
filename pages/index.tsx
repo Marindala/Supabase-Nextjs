@@ -10,7 +10,7 @@ export async function getStaticProps() {
   )
 
   const { data } = await supabaseAdmin.from('images').select('*').order('id')
-  //console.log(data)
+  console.log(data)
   return {
     props: {
       images: data,
@@ -34,9 +34,9 @@ type Image = {
 export default function Gallery({ images }: { images: Image[] }) {
   return (
     <div>
-      <div className="p-4 items-center text-center sm:flex sm:items-center justify-center md:items-center  sm:text-center">
+     {/*  <div className="p-4 items-center text-center sm:flex sm:items-center justify-center md:items-center  sm:text-center">
         {' '}
-        {/* -mt-4 */}
+        
         <img
           className="mb-8 screen-reader-text duration-1500 cursor-pointer rounded-full transition  hover:opacity-75 sm:mb-4 sm:mt-4"
           src="/logo.jpg"
@@ -44,11 +44,11 @@ export default function Gallery({ images }: { images: Image[] }) {
           
           style={{ width: '70px', height: '70px' }}
         />
-      </div>
+      </div> */}
 
-      <div className="mx-auto max-w-2xl  px-4 py-6 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h1 className="mb-8 text-center text-5xl  font-bold text-gray-500 xl:text-7xl xl:leading-[7.5rem]">
-          Galeria de Arte{' '}
+      <div className="mx-auto max-w-2xl  px-4 py-6 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1 className="mb-12 text-center text-4xl font-bold text-gray-500 xl:text-5x1 xl:leading-[6.5rem]">
+          Galeria de Arte Solidario{' '}
         </h1>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {images.map((image) => (
